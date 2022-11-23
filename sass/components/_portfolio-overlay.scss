@@ -1,0 +1,28 @@
+.overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+
+    transform: translate(0%, 100%);
+    transition: transform 250ms var(--animation-timing-function);
+
+    .portfolio-link:hover & {
+        transform: translate(0);
+    }
+}
+
+.overlay-text {
+    padding: 63px 24px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+}

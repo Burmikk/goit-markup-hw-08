@@ -1,0 +1,52 @@
+// Utils styles
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+
+
+// Base styles
+
+@import './base/base';
+@import './base/reset';
+
+
+
+
+// Components styles
+
+
+
+
+@import './components/container';
+
+// Header
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/header-contacts';
+
+// Index page main
+@import './components/hero';
+@import './components/features';
+@import './components/work';
+@import './components/our-team';
+@import './components/clients';
+@import './components/backdrop';
+@import './components/modal-btn';
+@import './components/modal-form';
+
+// Footer
+@import './components/footer';
+@import './components/footer-contacts';
+@import './components/footer-social';
+@import './components/footer-subscription';
+
+
+// Portfolio page main
+
+@import './components/portfolio';
+@import './components/portfolio-filter';
+@import './components/portfolio-card';
+@import './components/portfolio-overlay';
+

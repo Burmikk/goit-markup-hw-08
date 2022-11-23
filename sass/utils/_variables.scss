@@ -1,0 +1,19 @@
+/* Основной цвет текста #212121; */
+/* Второстепенный цвет текста #757575;*/
+/* Черный #000000; */
+/* Белый #ffffff;*/
+/* Цвет акцент #2196F3; */
+/* Белый прозрачный rgba(255, 255, 255, 0.6) */
+
+:root {
+    /* Color */
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196f3;
+    --primary-white-color: #ffffff;
+    --primary-bg-color: #ffffff;
+    --prmary-icon-color: #afb1b8;
+
+    /* Animation */
+    --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

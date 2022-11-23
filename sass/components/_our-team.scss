@@ -1,0 +1,95 @@
+
+
+.team {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    background-color: #f5f4fa;
+}
+
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-item {
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-item+.team-item {
+    margin-left: 30px;
+}
+
+.team-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.employee-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 16px;
+
+    color: var(--title-text-color);
+}
+
+/* Team icon */
+.team-icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--prmary-icon-color);
+    background-color: #ffffff;
+
+    transition: background-color 250ms var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        }
+
+     &:hover>.team-icon,
+     &:focus>.team.icon {
+        fill: var(--primary-white-color);
+     }
+}
+
+
+.team-icon {
+    fill: var(--prmary-icon-color);
+    transition: fill 250ms var(--animation-timing-function);
+}
