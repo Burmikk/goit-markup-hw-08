@@ -8,8 +8,7 @@
 }
 
 .team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+   @include section;
 }
 
 .team-title {
@@ -83,7 +82,7 @@
         }
 
      &:hover>.team-icon,
-     &:focus>.team.icon {
+     &:focus>.team-icon {
         fill: var(--primary-white-color);
      }
 }

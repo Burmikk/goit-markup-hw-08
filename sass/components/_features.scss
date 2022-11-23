@@ -1,7 +1,7 @@
 
 
 .features__section {
-    padding-top: 94px;
+    @include section (0);
 }
 
 .features__list {

@@ -1,7 +1,6 @@
 
 .work__section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+   @include section;
 }
 
 .work__title {
