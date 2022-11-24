@@ -1,42 +1,53 @@
-
 .contact {
+  display: none;
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+  }
+  //Desctop
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
     display: flex;
-    
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    gap: 30px;
+  }
 }
 
 .contact__list {
-    display: flex;
-    align-items: center;
-}
-
-.contact .contact__list+.contact__list {
-    margin-left: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .contact__link {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
-    color: var(--title-text-color);
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  color: var(--title-text-color);
 
-    transition: color 250ms var(--animation-timing-function);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-    &:hover,
-    &:focus {
-    color: var(--accent-color);}
+  transition: color 250ms var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .contact__icon {
-    fill: currentColor;
-    margin-right: 10px;
+  fill: currentColor;
+  margin-right: 10px;
 }

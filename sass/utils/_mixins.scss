@@ -2,7 +2,7 @@
 
 //  Mixin for section padding
 
-@mixin section ($pb:94px,$pt: 94px){
+@mixin section ($pb:60px,$pt: 60px){
     padding-top: $pt;
     padding-bottom: $pb;
 }

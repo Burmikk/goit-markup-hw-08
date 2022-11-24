@@ -1,51 +1,72 @@
-
 .clients-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  // Mobile padding
+  @include section;
+
+  //Desctop padding
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 
 .clients-title {
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
+  color: #212121;
+
+  //Desctop
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
+  }
 }
 
 /* Clients icon */
 
 .clients-icon-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients-icon-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 92px;
+  color: var(--prmary-icon-color);
+  border: 1px solid var(--prmary-icon-color);
+  border-radius: 4px;
+
+  transition: border-color 250ms var(--animation-timing-function);
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  //Desctop
+  @media screen and (min-width: 1200px) {
     width: 170px;
-    height: 92px;
-    color: var(--prmary-icon-color);
-    border: 1px solid var(--prmary-icon-color);
-    border-radius: 4px;
+  }
 
-    transition: border-color 250ms var(--animation-timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-    &:hover,
-    &:focus {
-        border-color: var(--accent-color);
-        }
-
-    &:hover>.clients-icon,
-    &:focus>.clients-icon {
-        fill: var(--accent-color);
-    }
+  &:hover > .clients-icon,
+  &:focus > .clients-icon {
+    fill: var(--accent-color);
+  }
 }
-
 
 .clients-icon {
-    fill: var(--prmary-icon-color);
-    transition: fill 250ms var(--animation-timing-function);
+  fill: var(--prmary-icon-color);
+  transition: fill 250ms var(--animation-timing-function);
 }
-

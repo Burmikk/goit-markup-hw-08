@@ -1,23 +1,35 @@
 .container {
+  $brakepoints: (
+    mobile: 480px,
+    tablet: 768px,
+    desctop: 1200px,
+  );
 
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  // Mobile
+
+  @media screen and (min-width: 480px) {
     width: 480px;
+    outline: 2px solid green;
+  }
+
+  // Tablet
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    outline: 2px solid green;
+  }
+
+  //Desctop
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-
-    // Tablet
-
-    @media screen and (min-width:768px) {
-        
-    }
-
-
-
-    // width: 1200px;
-    // margin: 0 auto;
-    // padding-left: 15px;
-    // padding-right: 15px;
-    // /* outline: 2px solid green; */
+    outline: 2px solid green;
+  }
 }

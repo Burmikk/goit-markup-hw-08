@@ -1,45 +1,50 @@
-
-
 .social {
+  margin-bottom: 60px;
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
+  //Desctop
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
+  }
 }
 
 .social-title {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .social-icon-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .social-icon-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--primary-white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
 
-    transition: background-color 250ms var(--animation-timing-function);
+  transition: background-color 250ms var(--animation-timing-function);
 
-    &:hover,
-    &:focus {
-            background-color: var(--accent-color);
-        }
-
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
-
 .social-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
