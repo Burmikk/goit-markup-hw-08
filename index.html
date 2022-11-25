@@ -81,7 +81,7 @@
         </div>
       </section>
       <!-- Features -->
-      <!-- <section class="features">
+      <section class="features">
         <div class="features__section container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features__list">
@@ -131,43 +131,73 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--  Work -->
-      <!-- <section class="work">
+      <section class="work">
         <div class="work__section container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img src="./images/index/img1.jpeg" alt="Розробка сайтів" width="370" />
+              <img
+                srcset="./images/work/work-1_@1x.jpg 1x, images/work/work-1_@2x.jpg 2x"
+                src="./images/index/img1.jpeg"
+                alt="Розробка сайтів"
+              />
               <p class="work__description">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img src="./images/index/img2.jpeg" alt="Розробка мобільних додатків" width="370" />
+              <img
+                srcset="./images/work/work-2_@1x.jpg 1x, images/work/work-2_@2x.jpg 2x"
+                src="./images/work/work-2_@1x.jpg"
+                alt="Розробка мобільних додатків"
+              />
               <p class="work__description">Мобільні додатки</p>
             </li>
             <li class="work__item">
               <img
-                src="./images/index/img3.jpeg"
+                srcset="./images/work/work-3_@1x.jpg 1x, images/work/work-3_@2x.jpg 2x"
+                src="./images/work/work-3_@1x.jpg"
                 alt="Створення дизайну вашого сайту"
-                width="370"
               />
               <p class="work__description">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Our team -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="team-section container">
-          <h2 class="team-title team">Наша команда</h2>
+          <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/index/img4.jpeg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <!-- Desctop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/team-1_lg@1x.jpg 1x, ./images/team/team-1_lg@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/team-1_m@1x.jpg 1x, ./images/team/team-1_m@2x.jpg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/team/team-1_sm@1x.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x"
+                />
+                <img
+                  src="./images/team/team-1_sm@1x.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="employee-name">Ігор Дем'яненко</h3>
-                <p class="position">Product Designer</p> -->
-      <!-- Team icon -->
-      <!-- <ul class="team-icon-list">
+                <p class="position">Product Designer</p>
+                <!-- Team icon -->
+                <ul class="team-icon-list">
                   <li class="team-icon-item">
                     <a
                       class="team-icon-link"
@@ -220,12 +250,34 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/index/img5.jpeg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <!-- Desctop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/team-2_lg@1x.jpg 1x, ./images/team/team-2_lg@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/team-2_m@1x.jpg 1x, ./images/team/team-2_m@2x.jpg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/team/team-2_sm@1x.jpg 1x, ./images/team/team-2_sm@2x.jpg 2x"
+                />
+                <img
+                  src="./images/team/team-2_sm@1x.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="employee-name">Ольга Рєпіна</h3>
-                <p class="position">Frontend Developer</p> -->
-      <!-- Team icon -->
-      <!-- <ul class="team-icon-list">
+                <p class="position">Frontend Developer</p>
+                <!-- Team icon -->
+                <ul class="team-icon-list">
                   <li class="team-icon-item">
                     <a
                       class="team-icon-link"
@@ -278,12 +330,34 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/index/img6.jpeg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <!-- Desctop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/team-3_lg@1x.jpg 1x, ./images/team/team-3_lg@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/team-3_m@1x.jpg 1x, ./images/team/team-3_m@2x.jpg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/team/team-3_sm@1x.jpg 1x, ./images/team/team-3_sm@2x.jpg 2x"
+                />
+                <img
+                  src="./images/team/team-3_sm@1x.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="employee-name">Микола Тарасов</h3>
-                <p class="position">Marketing</p> -->
-      <!-- Team icon -->
-      <!-- <ul class="team-icon-list">
+                <p class="position">Marketing</p>
+                <!-- Team icon -->
+                <ul class="team-icon-list">
                   <li class="team-icon-item">
                     <a
                       class="team-icon-link"
@@ -336,12 +410,34 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/index/img7.jpeg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <!-- Desctop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/team-4_lg@1x.jpg 1x, ./images/team/team-4_lg@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/team-4_m@1x.jpg 1x, ./images/team/team-4_m@2x.jpg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/team/team-4_sm@1x.jpg 1x, ./images/team/team-4_sm@2x.jpg 2x"
+                />
+                <img
+                  src="./images/team/team-4_sm@1x.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="employee-name">Михайло Єрмаков</h3>
-                <p class="position">UI Designer</p> -->
-      <!-- Team icon -->
-      <!-- <ul class="team-icon-list">
+                <p class="position">UI Designer</p>
+                <!-- Team icon -->
+                <ul class="team-icon-list">
                   <li class="team-icon-item">
                     <a
                       class="team-icon-link"
@@ -395,9 +491,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Clients -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="clients-section container">
           <h2 class="clients-title">Постійні клієнти</h2>
           <ul class="clients-icon-list">
@@ -439,13 +535,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
-    <!-- <footer class="footer">
-      <div class="footer-box container"> -->
-    <!-- Contacts -->
-    <!-- <div class="footer-contacts">
+    <footer class="footer">
+      <div class="footer-box container">
+        <!-- Contacts -->
+        <div class="footer-contacts">
           <a href="./index.html" class="logo-accent footer"> Web<span class="logo">Studio</span></a>
           <address>
             <ul class="address-list">
@@ -466,9 +562,9 @@
               </li>
             </ul>
           </address>
-        </div> -->
-    <!-- Social links -->
-    <!-- <div class="social">
+        </div>
+        <!-- Social links -->
+        <div class="social">
           <h2 class="social-title">Приєднуйтесь</h2>
           <ul class="social-icon-list">
             <li class="social-icon-item">
@@ -520,9 +616,9 @@
               ></a>
             </li>
           </ul>
-        </div> -->
-    <!-- Subscription -->
-    <!-- <div class="subscription">
+        </div>
+        <!-- Subscription -->
+        <div class="subscription">
           <strong class="subscription-title">Підпишіться на розсилку</strong>
           <form class="subscription-form">
             <input class="subscription-field" type="email" name="email" placeholder="E-mail" />
@@ -535,7 +631,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
