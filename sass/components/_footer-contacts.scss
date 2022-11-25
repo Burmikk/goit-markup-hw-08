@@ -1,10 +1,12 @@
 .footer-contacts {
+  margin-bottom: 60px;
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 50%;
   }
   //Desctop
   @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
     margin-right: 70px;
   }
 }
@@ -14,7 +16,6 @@
 }
 
 .address-list {
-  margin-bottom: 60px;
   padding: 0;
   list-style: none;
 

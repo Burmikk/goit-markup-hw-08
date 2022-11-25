@@ -1,15 +1,13 @@
-
-
 //  Mixin for section padding
 
-@mixin section ($pb:60px,$pt: 60px){
-    padding-top: $pt;
-    padding-bottom: $pb;
+@mixin section($pb: 60px, $pt: 60px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
 }
 // Mixin for section-list
 // $items - кол-во карточек на странице
 // $ident - отступ между карточками
 
-@mixin section-width ($items:2, $ident:30px) {
-    width: calc((100% - $ident*($items - 1))/ $items);
+@mixin section-width($items: 2, $ident: 30px) {
+  width: calc((100% - $ident * ($items - 1)) / $items);
 }
