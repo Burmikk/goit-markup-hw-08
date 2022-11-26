@@ -1,13 +1,12 @@
 .header {
-    background-color: var(--primary-bg-color);
-    align-items: center;
-    display: flex;
-    border: 1px solid #ececec;
+  background-color: var(--primary-bg-color);
+  align-items: center;
+  display: flex;
+  border: 1px solid #ececec;
 }
 
 .header-content {
-    display: flex;
-    align-items: center;
-
-    height: 80px;
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
