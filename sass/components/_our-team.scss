@@ -3,10 +3,14 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 
 .team-section {
-  @include section;
 }
 
 .team-title {

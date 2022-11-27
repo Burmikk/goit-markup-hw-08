@@ -101,10 +101,12 @@
   color: var(--title-text-color);
 
   &.accent {
-    font-size: 34px;
-    line-height: 1.18;
-
     color: var(--accent-color);
+
+    @media screen and (min-width: 480px) {
+      font-size: 34px;
+      line-height: 1.18;
+    }
   }
 }
 
@@ -113,7 +115,11 @@
 .mobile-socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 60px;
+
+  @media screen and (min-width: 480px) {
+    gap: 10px;
+  }
 }
 
 .mobile-socials__link {

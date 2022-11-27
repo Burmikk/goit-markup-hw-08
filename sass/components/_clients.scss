@@ -1,4 +1,4 @@
-.clients-section {
+.clients {
   // Mobile padding
   @include section;
 
@@ -34,20 +34,33 @@
   gap: 30px;
 }
 
+.clients-icon-item {
+  // Tablet
+  @media screen and (max-width: 480px) {
+    @include section-width(2);
+    // width: 226px;
+  }
+}
+
 .clients-icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
-  height: 92px;
   color: var(--prmary-icon-color);
   border: 1px solid var(--prmary-icon-color);
   border-radius: 4px;
 
   transition: border-color 250ms var(--animation-timing-function);
 
+  // mobile
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+  }
+
   // Tablet
   @media screen and (min-width: 768px) {
+    @include section-width(2);
     width: 226px;
   }
   //Desctop
